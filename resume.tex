@@ -1,0 +1,111 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV - RESUME CLASS FILE
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% This class file defines the structure and design of the template. 
+%
+% Original header:
+% Copyright (C) 2010 by Trey Hunner
+%
+% Copying and distribution of this file, with or without modification,
+% are permitted in any medium without royalty provided the copyright
+% notice and this notice are preserved. This file is offered as-is,
+% without any warranty.
+%
+% Created by Trey Hunner and modified by www.LaTeXTemplates.com
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\newcommand{\changeurlcolor}[1]{\hypersetup{urlcolor=#1}}      
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Ari Madian}
+\address{{akmadian@gmail.com - (253)249-6636}}
+\address{
+    \href{https://www.linkedin.com/in/arimadian/}{linkedin.com/in/arimadian} -
+    \href{https://github.com/akmadian}{github.com/akmadian}
+}
+
+\begin{document}
+\begin{rSection}{Education}
+
+{\bf University of Washington} \hfill { Est. Graduation Jun 2022 } 
+\\ B.S. Informatics\hfill { } %GPA
+
+{\bf South Seattle College} \hfill { Graduated Jun 2020 } 
+\\ A.S. Computer Science \hfill {GPA: 3.6}
+\\ \small Activities: Founded Hour of Code Club, Phi Theta Kappa Member
+
+
+\end{rSection}
+\begin{rSection}{Skills}
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+        Programming Languages &  \small Python, C\#, Javascript, TypeScript, Java, C++, R, MATLAB\\
+        Software \& Tools & \small AWS, Git, Node.js, Vue.js, React.js, CSS, HTML, SQL, Docker\\
+        & Excel, Tableau, Jupyter, .NET, Linux and Windows
+    \end{tabular}
+\end{rSection}
+\begin{rSection}{Experience}
+    \begin{rSubsection}
+        {Open Source Community Coordinator (Contract)}
+        {Mar 2020 - Jun 2020}
+        {\em Creative Commons}
+        {}
+        \begin{itemize}
+            \setlength\itemsep{-0.2em}
+            \item\small Managed Creative Commons' open source presence and a 600+ person open source community spanning six continents and 20 time zones. Oversaw a 30\% growth in community size during my time.
+            \item Drafted and launched a unique community engagement initiative to reward and retain high quality open source contributors that saw 30 actively engaged participants within two months of launch.
+            \item Reviewed hundreds of PRs and issues; maintained social media accounts, the CC open source site and public wiki; significantly reduced repository maintenance overhead by automating workflows with GitHub actions.
+            \item Mentored a diverse set of 125 interns and internship applicants through Google Summer of Code and Outreachy.
+        \end{itemize}
+    \end{rSubsection}
+    \begin{rSubsection}
+        {Google Summer of Code Student (Intern)}
+        {May 2019 - Aug 2019}
+        {\em Creative Commons}
+        {[\href{https://github.com/creativecommons/chooser}{GitHub Repo}][\href{https://chooser-beta.creativecommons.org/}{Live Site}]}
+        \begin{itemize}
+            \setlength\itemsep{-0.25em}
+            \item \small Made free and simple copy(right/left) licensing more accessible to millions by revamping an outdated website with a focus on UX, accessibility, and an educational experience of Creative Commons licenses.
+            \item Created wireframes and UI/UX prototypes, conducted usability testing and accessibility audits.
+            %\item Continuing work on the project to this day via personal contributions and mentoring with Outreachy.
+            \item Site built with Vue/ VueX, Jest and Nightwatch for testing, along with i18n for internationalization.
+        \end{itemize}
+    \end{rSubsection}
+\end{rSection}
+\begin{rSection}{Projects}
+    \begin{rSubsection}
+        {NZXTSharp}
+        {Dec 2018 - Oct 2019}
+        { \normalsize An open source .NET SDK for NZXT Devices }
+        {[\href{https://github.com/akmadian/NZXTSharp}{GitHub Repo}]}
+        \begin{itemize}
+            \setlength\itemsep{-0.25em}
+            \item\small Designed and built an efficient and scalable SDK that controls NZXT PC components with C\# by teaching myself about, reverse engineering, and emulating serial and HID communication protocols.
+            \item \textasciitilde 3.5k downloads on \href{https://www.nuget.org/packages/NZXTSharp}{nuget.org}; 39 Stars, 13 Forks on GitHub
+        \end{itemize}
+    \end{rSubsection}
+    \begin{rSubsection}
+        {OpenFinance}
+        {Aug 2020 - Present}
+        { \normalsize Open source personal finance software for my own use. }
+        {[\href{https://github.com/akmadian/openfinance}{GitHub Repo}]}
+        \begin{itemize}
+            \setlength\itemsep{-0.2em}
+            \item \small Developed an alternative to commercial finance software to manage and visualize budgets and spending.
+            \item Can import bank statements, pull account positions from Coinbase and TD Ameritrade using their APIs, amd aggregate stock news, sentiment, and charts with TradingView.
+            \item Built with Flask and SQLite backend, with a React/ Redux frontend.
+        \end{itemize}
+    \end{rSubsection}
+\end{rSection}
+\end{document}
